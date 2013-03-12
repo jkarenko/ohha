@@ -1,0 +1,4 @@
+Tuntikirjanpito, ohjelmointiprojekti
+
+12.3.2013	1h	kehitysympäristön pystytys
+			

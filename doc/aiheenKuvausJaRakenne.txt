@@ -1,0 +1,12 @@
+Aihe: side scrolling shoot 'em up
+
+Pelaaja: ohjaa oikealle pyrkivää alusta, väistelee ja ampuu vastaan tulevia vihollisia ja kerää power-up -paketteja
+
+Ympäristö: esimääritelty vieritettävä grafiikka jossa maastonmuotoja, parallax tausta ja pilvet
+
+Viholliset: tyhmiä, lentävät esimääriteltyä polkua, jotkut ovat paikallaan ja ampuvat pelaajaa kohti, tason lopussa on suurempi ja vaikeampi "boss battle"
+
+Power-upit: erilaisia aseita kerättävänä; suoraan ampuva, eteen ja alaviistoon ampuva, suoraan ampuva tehokkaampi
+
+Muuta: peli laskee pisteet tuhotuista vihollisista ja kerätyistä power-upeista ja kirjoittaa pelin loputtua tuloksen top-10 tiedostoon jos se oli pistemäärältään tarpeeksi korkea
+

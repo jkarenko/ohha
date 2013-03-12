@@ -4,3 +4,6 @@
 *.jar
 *.war
 *.ear
+/seuss-game/nbproject/private/
+/seuss-game/nbproject/dist/
+
