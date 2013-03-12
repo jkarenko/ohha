@@ -9,10 +9,10 @@ import seuss.entity.Entity;
  * @author juho karenko
  */
 public abstract class Component {
-    protected long id;
+    protected String id;
     protected Entity owner;
     
-    public long getId() {
+    public String getId() {
         return id;
     }
     

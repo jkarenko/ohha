@@ -14,7 +14,7 @@ public class SideScrollingMovement extends Component {
     float direction;
     float speed;
 
-    public SideScrollingMovement(long id) {
+    public SideScrollingMovement(String id) {
         this.id = id;
     }
 

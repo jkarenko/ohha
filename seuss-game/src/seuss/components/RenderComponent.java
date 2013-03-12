@@ -10,7 +10,7 @@ import org.newdawn.slick.state.StateBasedGame;
  * @author juho karenko
  */
 public abstract class RenderComponent extends Component {
-    public RenderComponent(long id)
+    public RenderComponent(String id)
     {
 	this.id = id;
     }

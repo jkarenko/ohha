@@ -14,7 +14,7 @@ public class ImageRenderComponent extends RenderComponent {
 
     Image image;
 
-    public ImageRenderComponent(long id, Image image) {
+    public ImageRenderComponent(String id, Image image) {
         super(id);
         this.image = image;
     }

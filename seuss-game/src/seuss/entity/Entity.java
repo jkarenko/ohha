@@ -47,11 +47,11 @@ public class Entity {
 	components.add(component);
     }
  
-    public Component getComponent(long id)
+    public Component getComponent(String id)
     {
         for(Component comp : components)
 	{
-	    if ( comp.getId() == id )
+	    if ( comp.getId().equalsIgnoreCase(id) )
 	        return comp;
 	}
  
