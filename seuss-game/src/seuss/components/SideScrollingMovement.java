@@ -26,15 +26,15 @@ public class SideScrollingMovement extends Component {
 
         Input input = gc.getInput();
 
-        if (input.isKeyDown(Input.KEY_S)) {
+        if (input.isKeyDown(Input.KEY_A)) {
             rotation += -0.2f * delta;
         }
 
-        if (input.isKeyDown(Input.KEY_W)) {
+        if (input.isKeyDown(Input.KEY_D)) {
             rotation += 0.2f * delta;
         }
 
-        if (input.isKeyDown(Input.KEY_D)) {
+        if (input.isKeyDown(Input.KEY_W)) {
             float hip = 0.4f * delta;
 
             position.x += hip * java.lang.Math.sin(java.lang.Math.toRadians(rotation));
