@@ -1,7 +1,6 @@
 package seuss.components;
 
 import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Input;
 import org.newdawn.slick.geom.Vector2f;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -25,8 +24,8 @@ public class ParallaxMovement extends Component {
 
         position.x += speed * delta;
 
-        if (position.x < gc.getWidth() * -1) {
-            position.x = gc.getWidth();
+        if (position.x < (gc.getWidth() - 1) * -1) {
+            position.x = gc.getWidth() - 1;
         }
 
         owner.setPosition(position);

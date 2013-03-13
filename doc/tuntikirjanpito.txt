@@ -1,4 +1,6 @@
 Tuntikirjanpito, ohjelmointiprojekti
 
-12.3.2013	1h	kehitysympäristön pystytys
-			3h	Entity "frameworkin" pystytys
+12.3.2013	1h		kehitysympäristön pystytys
+			2h		Entity "frameworkin" pystytys
+			1h		Placeholder kuvien piirtäminen
+			1h		Parallax scroll tausta

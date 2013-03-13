@@ -17,6 +17,7 @@ import seuss.entity.Entity;
  * @author juho karenko
  */
 public class SeussGame extends BasicGame {
+
     Entity plane = null;
     Entity ground1 = null;
     Entity ground2 = null;
@@ -26,7 +27,7 @@ public class SeussGame extends BasicGame {
     Entity trees2 = null;
     Entity clouds1 = null;
     Entity clouds2 = null;
-    
+
     public SeussGame(String title) {
         super(title);
     }
@@ -46,47 +47,47 @@ public class SeussGame extends BasicGame {
         float treespeed = -0.4f;
         float groundspeed = -0.1f;
         float cloudspeed = -0.2f;
-        
+
         sky1 = new Entity("sky1");
-        sky1.AddComponent( new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
+        sky1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
         sky1.AddComponent(new ParallaxMovement("SkyMovement", skyspeed));
-        
+
         sky2 = new Entity("sky2");
-        sky2.AddComponent( new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
+        sky2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
         sky2.AddComponent(new ParallaxMovement("SkyMovement", skyspeed));
-        sky2.setPosition(new Vector2f(gc.getWidth(), 0));
-        
+        sky2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
+
         trees1 = new Entity("trees1");
         trees1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/trees_front.png")));
         trees1.AddComponent(new ParallaxMovement("TreesMovement", treespeed));
-        
+
         trees2 = new Entity("trees2");
         trees2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/trees_front.png")));
         trees2.AddComponent(new ParallaxMovement("TreesMovement", treespeed));
-        trees2.setPosition(new Vector2f(gc.getWidth(), 0));
-        
+        trees2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
+
         clouds1 = new Entity("clouds1");
         clouds1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/clouds.png")));
         clouds1.AddComponent(new ParallaxMovement("CloudsMovement", cloudspeed));
-        
+
         clouds2 = new Entity("clouds2");
         clouds2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/clouds.png")));
         clouds2.AddComponent(new ParallaxMovement("CloudsMovement", cloudspeed));
-        clouds2.setPosition(new Vector2f(gc.getWidth(), 0));
-        
+        clouds2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
+
         ground1 = new Entity("ground1");
-        ground1.AddComponent( new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")) );
+        ground1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")));
         ground1.AddComponent(new ParallaxMovement("GroundMovement", groundspeed));
-        
+
         ground2 = new Entity("ground2");
-        ground2.AddComponent( new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")) );
+        ground2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")));
         ground2.AddComponent(new ParallaxMovement("GroundMovement", groundspeed));
-        ground2.setPosition(new Vector2f(gc.getWidth(), 0));
- 
+        ground2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
+
         plane = new Entity("plane");
-        plane.AddComponent( new ImageRenderComponent("PlaneRender", new Image("/data/airplane.png")) );
-        plane.AddComponent( new SideScrollingMovement("PlaneMovement") );
-        plane.setPosition(new Vector2f(400, 300));
+        plane.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/airplane.png")));
+        plane.AddComponent(new SideScrollingMovement("PlaneMovement"));
+        plane.setPosition(new Vector2f(100, 400));
         plane.setRotation(90f);
     }
 
@@ -100,8 +101,8 @@ public class SeussGame extends BasicGame {
         sky2.update(gc, null, delta);
         clouds1.update(gc, null, delta);
         clouds2.update(gc, null, delta);
-        
-    	plane.update(gc, null, delta);
+
+        plane.update(gc, null, delta);
     }
 
     @Override
@@ -110,7 +111,7 @@ public class SeussGame extends BasicGame {
         sky2.render(gc, null, gr);
         ground1.render(gc, null, gr);
         ground2.render(gc, null, gr);
-    	plane.render(gc, null, gr);
+        plane.render(gc, null, gr);
         trees1.render(gc, null, gr);
         trees2.render(gc, null, gr);
         clouds1.render(gc, null, gr);
