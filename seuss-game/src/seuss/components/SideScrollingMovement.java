@@ -23,7 +23,7 @@ public class SideScrollingMovement extends Component {
         float rotation = owner.getRotation();
         float scale = owner.getScale();
         Vector2f position = owner.getPosition();
-
+        
         Input input = gc.getInput();
 
         if (input.isKeyDown(Input.KEY_A)) {
