@@ -1,6 +1,7 @@
 
-package seuss.components;
+package seuss.components.movement;
 
+import seuss.components.movement.PlayerMovement;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -18,17 +19,18 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.geom.Vector2f;
 import org.newdawn.slick.opengl.ImageData;
 import org.newdawn.slick.state.StateBasedGame;
-import seuss.entity.Entity;
+import seuss.components.render.ImageRenderComponent;
+import seuss.entity.EntityImpl;
 
 /**
  *
  * @author juho
  */
-public class SideScrollingMovementTest {
+public class PlayerMovementTest {
 
-    static Entity plane;
+    static EntityImpl plane;
 
-    public SideScrollingMovementTest() {
+    public PlayerMovementTest() {
     }
 
     @BeforeClass
@@ -38,9 +40,9 @@ public class SideScrollingMovementTest {
         game = new BasicGame("test") {
             @Override
             public void init(GameContainer gc) throws SlickException {
-                plane = new Entity("plane");
+                plane = new EntityImpl("plane");
                 plane.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/airplane.png")));
-                plane.AddComponent(new SideScrollingMovement("PlaneMovement"));
+                plane.AddComponent(new PlayerMovement("PlaneMovement"));
                 plane.setPosition(new Vector2f(100, 400));
                 plane.setRotation(90f);
             }
@@ -69,7 +71,7 @@ public class SideScrollingMovementTest {
     }
 
     /**
-     * Test of update method, of class SideScrollingMovement.
+     * Test of update method, of class PlayerMovement.
      */
     @Test
     public void testUpdate() {
@@ -143,8 +145,8 @@ public class SideScrollingMovementTest {
             }
         };
         int delta = 0;
-        SideScrollingMovement component = new SideScrollingMovement("sideScrollingMovementTest");
-        component.setOwnerEntity(new Entity("testEntity"));
+        PlayerMovement component = new PlayerMovement("sideScrollingMovementTest");
+        component.setOwnerEntity(new EntityImpl("testEntity"));
         component.direction = 90.0f;
         component.speed = 5.0f;
         component.update(gc, sbg, delta);

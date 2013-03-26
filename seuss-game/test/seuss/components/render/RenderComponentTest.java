@@ -1,4 +1,4 @@
-package seuss.components;
+package seuss.components.render;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -43,7 +43,6 @@ public class RenderComponentTest {
 
     @Test
     public void testRender() {
-        System.out.println("render");
         GameContainer gc = null;
         StateBasedGame sbg = null;
         Graphics gr = null;

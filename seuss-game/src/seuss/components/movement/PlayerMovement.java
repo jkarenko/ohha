@@ -1,20 +1,21 @@
-package seuss.components;
+package seuss.components.movement;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.geom.Vector2f;
 import org.newdawn.slick.state.StateBasedGame;
+import seuss.components.Component;
 
 /**
  *
  * @author juho karenko
  */
-public class SideScrollingMovement extends Component {
+public class PlayerMovement extends Component {
 
     float direction;
     float speed;
 
-    public SideScrollingMovement(String id) {
+    public PlayerMovement(String id) {
         this.id = id;
     }
 
@@ -39,6 +40,10 @@ public class SideScrollingMovement extends Component {
 
             position.x += hip * java.lang.Math.sin(java.lang.Math.toRadians(rotation));
             position.y -= hip * java.lang.Math.cos(java.lang.Math.toRadians(rotation));
+        }
+        
+        if (input.isKeyDown(Input.KEY_ESCAPE)) {
+            gc.exit();
         }
 
         owner.setPosition(position);

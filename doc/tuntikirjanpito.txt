@@ -4,4 +4,7 @@ Tuntikirjanpito, ohjelmointiprojekti
 			2h		Entity "frameworkin" pystytys
 			1h		Placeholder kuvien piirtäminen
 			1h		Parallax scroll tausta
-19.3.2013	2h		Yksikkötestauksen aloitus, vaikea testata 3rd party riippuvuuksien vuoksi
+19.3.		2h		Yksikkötestauksen aloitus, vaikea testata 3rd party riippuvuuksien vuoksi
+26.3.		3h		Dependency injection, ensimmäinen implementaatiostubi, luokkakaavion tarkennus, 
+					dokumentaation tarkennus
+					

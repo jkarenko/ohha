@@ -8,12 +8,12 @@ import org.newdawn.slick.state.StateBasedGame;
  *
  * @author juho karenko
  */
-public class ParallaxMovement extends Component {
+public class ParallaxBackgroundMovement extends Component {
 
     float direction;
     float speed;
 
-    public ParallaxMovement(String id, float speed) {
+    public ParallaxBackgroundMovement(String id, float speed) {
         this.id = id;
         this.speed = speed;
     }

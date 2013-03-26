@@ -7,10 +7,11 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.geom.Vector2f;
-import seuss.components.ImageRenderComponent;
-import seuss.components.ParallaxMovement;
-import seuss.components.SideScrollingMovement;
+import seuss.components.render.ImageRenderComponent;
+import seuss.components.ParallaxBackgroundMovement;
+import seuss.components.movement.PlayerMovement;
 import seuss.entity.Entity;
+import seuss.entity.EntityImpl;
 
 /**
  *
@@ -43,50 +44,50 @@ public class SeussGame extends BasicGame {
 
     @Override
     public void init(GameContainer gc) throws SlickException {
-        float skyspeed = -0.05f;
-        float treespeed = -0.4f;
-        float groundspeed = -0.1f;
-        float cloudspeed = -0.2f;
+        float skyspeed = -0.1f;
+        float treespeed = -0.6f;
+        float groundspeed = -0.2f;
+        float cloudspeed = -0.3f;
 
-        sky1 = new Entity("sky1");
+        sky1 = new EntityImpl("sky1");
         sky1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
-        sky1.AddComponent(new ParallaxMovement("SkyMovement", skyspeed));
+        sky1.AddComponent(new ParallaxBackgroundMovement("SkyMovement", skyspeed));
 
-        sky2 = new Entity("sky2");
+        sky2 = new EntityImpl("sky2");
         sky2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
-        sky2.AddComponent(new ParallaxMovement("SkyMovement", skyspeed));
+        sky2.AddComponent(new ParallaxBackgroundMovement("SkyMovement", skyspeed));
         sky2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
-        trees1 = new Entity("trees1");
+        trees1 = new EntityImpl("trees1");
         trees1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/trees_front.png")));
-        trees1.AddComponent(new ParallaxMovement("TreesMovement", treespeed));
+        trees1.AddComponent(new ParallaxBackgroundMovement("TreesMovement", treespeed));
 
-        trees2 = new Entity("trees2");
+        trees2 = new EntityImpl("trees2");
         trees2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/trees_front.png")));
-        trees2.AddComponent(new ParallaxMovement("TreesMovement", treespeed));
+        trees2.AddComponent(new ParallaxBackgroundMovement("TreesMovement", treespeed));
         trees2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
-        clouds1 = new Entity("clouds1");
+        clouds1 = new EntityImpl("clouds1");
         clouds1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/clouds.png")));
-        clouds1.AddComponent(new ParallaxMovement("CloudsMovement", cloudspeed));
+        clouds1.AddComponent(new ParallaxBackgroundMovement("CloudsMovement", cloudspeed));
 
-        clouds2 = new Entity("clouds2");
+        clouds2 = new EntityImpl("clouds2");
         clouds2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/clouds.png")));
-        clouds2.AddComponent(new ParallaxMovement("CloudsMovement", cloudspeed));
+        clouds2.AddComponent(new ParallaxBackgroundMovement("CloudsMovement", cloudspeed));
         clouds2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
-        ground1 = new Entity("ground1");
+        ground1 = new EntityImpl("ground1");
         ground1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")));
-        ground1.AddComponent(new ParallaxMovement("GroundMovement", groundspeed));
+        ground1.AddComponent(new ParallaxBackgroundMovement("GroundMovement", groundspeed));
 
-        ground2 = new Entity("ground2");
+        ground2 = new EntityImpl("ground2");
         ground2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")));
-        ground2.AddComponent(new ParallaxMovement("GroundMovement", groundspeed));
+        ground2.AddComponent(new ParallaxBackgroundMovement("GroundMovement", groundspeed));
         ground2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
-        plane = new Entity("plane");
+        plane = new EntityImpl("plane");
         plane.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/airplane.png")));
-        plane.AddComponent(new SideScrollingMovement("PlaneMovement"));
+        plane.AddComponent(new PlayerMovement("PlaneMovement"));
         plane.setPosition(new Vector2f(100, 400));
         plane.setRotation(90f);
     }
