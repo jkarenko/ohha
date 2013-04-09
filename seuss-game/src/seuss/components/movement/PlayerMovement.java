@@ -7,6 +7,7 @@ import org.newdawn.slick.state.StateBasedGame;
 import seuss.components.Component;
 
 /**
+ * Reacts to keyboard presses and updates player position accordingly.
  *
  * @author juho karenko
  */

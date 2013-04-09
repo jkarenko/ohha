@@ -7,7 +7,8 @@ import org.newdawn.slick.geom.Vector2f;
 import org.newdawn.slick.state.StateBasedGame;
 
 /**
- *
+ * Draws entity components on screen at their determined locations and defined scale.
+ * 
  * @author juho karenko
  */
 public class ImageRenderComponent extends RenderComponent {

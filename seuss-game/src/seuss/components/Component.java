@@ -5,6 +5,7 @@ import org.newdawn.slick.state.StateBasedGame;
 import seuss.entity.EntityImpl;
 
 /**
+ * The superclass for all components
  *
  * @author juho karenko
  */

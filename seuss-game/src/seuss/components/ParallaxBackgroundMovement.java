@@ -5,7 +5,11 @@ import org.newdawn.slick.geom.Vector2f;
 import org.newdawn.slick.state.StateBasedGame;
 
 /**
- *
+ * Controls background image movement and resets the image to its starting
+ * position after it has traveled all the way through the game window.
+ * Two of these images placed properly will create a continuously scrolling
+ * background.
+ * 
  * @author juho karenko
  */
 public class ParallaxBackgroundMovement extends Component {

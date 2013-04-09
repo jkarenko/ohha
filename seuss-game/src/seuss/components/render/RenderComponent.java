@@ -7,6 +7,7 @@ import seuss.components.Component;
 //import seuss.components.Component;
 
 /**
+ * Draws entity components on screen at their determined locations and defined scale.
  *
  * @author juho karenko
  */

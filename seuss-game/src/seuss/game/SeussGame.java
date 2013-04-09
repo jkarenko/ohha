@@ -14,7 +14,8 @@ import seuss.entity.Entity;
 import seuss.entity.EntityImpl;
 
 /**
- *
+ * The game initialization and looping happens here
+ * 
  * @author juho karenko
  */
 public class SeussGame extends BasicGame {
