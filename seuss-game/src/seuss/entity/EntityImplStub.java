@@ -40,7 +40,7 @@ public class EntityImplStub implements Entity {
             renderComponent = (RenderComponent) component;
         }
 
-        component.setOwnerEntity(this);
+        //component.setOwnerEntity(this);
         components.add(component);
     }
 
