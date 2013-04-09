@@ -7,4 +7,4 @@ Tuntikirjanpito, ohjelmointiprojekti
 19.3.		2h		Yksikkötestauksen aloitus, vaikea testata 3rd party riippuvuuksien vuoksi
 26.3.		3h		Dependency injection, ensimmäinen implementaatiostubi, luokkakaavion tarkennus, 
 					dokumentaation tarkennus
-					
+9.4.		3h		Sekvenssidiagrammien piirto, javadocin aloitus, slick2d kirjastoon tutustumista
