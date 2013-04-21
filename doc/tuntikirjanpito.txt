@@ -8,3 +8,5 @@ Tuntikirjanpito, ohjelmointiprojekti
 26.3.		3h		Dependency injection, ensimmäinen implementaatiostubi, luokkakaavion tarkennus, 
 					dokumentaation tarkennus
 9.4.		3h		Sekvenssidiagrammien piirto, javadocin aloitus, slick2d kirjastoon tutustumista
+14.4.		2h		Collision detection -opiskelua, yksikkötestauksen mietiskelyä.
+16.4.		1h		Lisää sekvenssikaavioita
