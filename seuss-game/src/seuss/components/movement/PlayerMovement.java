@@ -41,6 +41,18 @@ public class PlayerMovement extends Component {
 
             position.x += hip * java.lang.Math.sin(java.lang.Math.toRadians(rotation));
             position.y -= hip * java.lang.Math.cos(java.lang.Math.toRadians(rotation));
+            if (position.y < 0) {
+                position.y = 0;
+            } else if (position.y > gc.getHeight()) {
+                position.y = gc.getHeight();
+            }
+            if (position.x < 0) {
+                position.x = 0;
+            } else if (position.x > gc.getWidth()) {
+                position.x = gc.getWidth();
+            }
+            
+            
         }
         
         if (input.isKeyDown(Input.KEY_ESCAPE)) {

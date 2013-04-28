@@ -1,0 +1,4 @@
+Testausdokumentti
+
+Pelimekaniikka:
+Testattu että lentokone pysyy peli-ikkunan rajojen sisäpuolella.

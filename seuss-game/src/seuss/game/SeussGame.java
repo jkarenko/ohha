@@ -37,7 +37,7 @@ public class SeussGame extends BasicGame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws SlickException {
+    public void runGame() throws SlickException {
         AppGameContainer app = new AppGameContainer(new SeussGame("SEUSS"));
         app.setDisplayMode(1280, 1024, false);
         app.start();
