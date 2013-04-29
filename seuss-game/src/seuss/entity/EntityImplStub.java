@@ -109,5 +109,10 @@ public class EntityImplStub implements Entity {
     public Shape getBoundingBox() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public void setBoundingBox(Shape boundingBox) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
