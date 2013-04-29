@@ -1,4 +1,20 @@
 Testausdokumentti
 
+Tämä dokumentti on luotu siitä syystä että joitain pelin osia on luontevaa testata käsin.
+
 Pelimekaniikka:
-Testattu että lentokone pysyy peli-ikkunan rajojen sisäpuolella.
+Testattu että
+- pelaajan lentokone pysyy pelialueen sisäpuolella eikä ylitä ruudun puoliväliä pystyakselilla
+- lentokoneen korkeus nousee ja laskee kun sen lentokulmaa muutetaan
+- lentokone liikkuu x-akselilla oikealle kun kaasutetaan
+- lentokone liikkuu x-akselilla vasempaan kun jarrutetaan.
+- lentokone tekee silmukan ylittäessään nollan asteen kulman, eli kun nokka on kohtisuoraan ylös.
+- lentokone palaa silmukan lentämisen jälkeen vaakasuoraan asentoon.
+- lentokone ei reagoi komentoihin silmukan lentämisen aikana.
+- peli loppuu ESC -näppäimestä
+
+Grafiikka:
+Testattu että
+- graafiset elementit piirretään ruudulle oikeassa järjestyksessä. Alimmaisesta päällimmäiseen: taivas, maa, lentokone, puut, pilvet.
+- taustakuvat alkavat uudestaan kun ne saavuttavat ruudun vasemman reunan
+- taustakuvat eivät repeile liitoksistaan (kovin pahasti)
