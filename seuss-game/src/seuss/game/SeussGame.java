@@ -6,9 +6,14 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Rectangle;
+import org.newdawn.slick.geom.Shape;
 import org.newdawn.slick.geom.Vector2f;
 import seuss.components.render.ImageRenderComponent;
 import seuss.components.ParallaxBackgroundMovement;
+import seuss.components.movement.BoundaryCheck;
+import seuss.components.movement.Drag;
+import seuss.components.movement.Gravity;
 import seuss.components.movement.PlayerMovement;
 import seuss.entity.Entity;
 import seuss.entity.EntityImpl;
@@ -89,6 +94,9 @@ public class SeussGame extends BasicGame {
         plane = new EntityImpl("plane");
         plane.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/airplane.png")));
         plane.AddComponent(new PlayerMovement("PlaneMovement"));
+        //plane.AddComponent(new Drag("PlaneDrag"));
+        //plane.AddComponent(new Gravity("PlaneGravity"));
+        plane.AddComponent(new BoundaryCheck("PlaneBoundaryCheck"));
         plane.setPosition(new Vector2f(100, 400));
         plane.setRotation(90f);
     }
