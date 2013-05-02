@@ -1,3 +1,5 @@
+## Peli on jäänyt keskeneräiseksi ja siinä voi nyt vain liikkua ja tehdä ilma-akrobaattisia temppuja
+
 Aihe: side scrolling shoot 'em up
 
 Pelaaja: ohjaa oikealle pyrkivää alusta, väistelee ja ampuu vastaan tulevia vihollisia ja kerää power-up -paketteja
@@ -12,7 +14,7 @@ Power-upit:
 erilaisia aseita kerättävänä; suoraan ampuva, eteen ja alaviistoon ampuva, suoraan ampuva tehokkaampi
 
 Muuta:
-peli laskee pisteet tuhotuista vihollisista ja kerätyistä power-upeista ja kirjoittaa pelin loputtua tuloksen top-10 tiedostoon jos se oli pistemäärältään tarpeeksi korkea
+peli laskee pisteet tuhotuista vihollisista ja kerätyistä power-upeista ja kirjoittaa pelin loputtua tuloksen top-10 tiedostoon jos se oli pistemäärältään tarpeeksi korkea.
 
 Arkkitehtuuri:
 Peli rakentuu yksinkertaisen entity frameworkin päälle jossa kaikki pelissä olevat elementit (pelaajan alus, viholliset, ammukset, taustakuva jne) ovat Entityjä joilla ei aluksi ole mitään ominaisuuksia, vaan kaikki ominaisuudet tulevat Entityihin liitettävien Component -olioiden mukana.
@@ -23,3 +25,6 @@ Kirjastot:
 Peli käyttää avoimen lähdekoodin Slick2D ja lwjgl kirjastojen tarjoamia containereita, input- ja piirtorajapintoja.
 http://www.slick2d.org/
 http://www.lwjgl.org/
+
+Pelin build ja dependency management hoidetaan Gradlella
+http://www.gradle.org/

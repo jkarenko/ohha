@@ -11,3 +11,4 @@ Tuntikirjanpito, ohjelmointiprojekti
 14.4.		2h		Collision detection -opiskelua, yksikkötestauksen mietiskelyä.
 16.4.		1h		Lisää sekvenssikaavioita
 30.3.		2h		Lento-akrobatiaa, testauksen dokumentti
+2.5.		4h		jar -paketointi, dokumentointi, käyttöohje
