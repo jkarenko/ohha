@@ -8,3 +8,7 @@
 /seuss-game/nbproject/dist/
 /seuss-game/build/
 /seuss-game/dist/
+/seuss-game/dist.old/
+/seuss-game/.gradle/
+/seuss-game/temp/
+/temp

@@ -56,43 +56,43 @@ public class SeussGame extends BasicGame {
         float cloudspeed = -0.3f;
 
         sky1 = new EntityImpl("sky1");
-        sky1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
+        sky1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("sky.png")));
         sky1.AddComponent(new ParallaxBackgroundMovement("SkyMovement", skyspeed));
 
         sky2 = new EntityImpl("sky2");
-        sky2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/sky.png")));
+        sky2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("sky.png")));
         sky2.AddComponent(new ParallaxBackgroundMovement("SkyMovement", skyspeed));
         sky2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
         trees1 = new EntityImpl("trees1");
-        trees1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/trees_front.png")));
+        trees1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("trees_front.png")));
         trees1.AddComponent(new ParallaxBackgroundMovement("TreesMovement", treespeed));
 
         trees2 = new EntityImpl("trees2");
-        trees2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/trees_front.png")));
+        trees2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("trees_front.png")));
         trees2.AddComponent(new ParallaxBackgroundMovement("TreesMovement", treespeed));
         trees2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
         clouds1 = new EntityImpl("clouds1");
-        clouds1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/clouds.png")));
+        clouds1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("clouds.png")));
         clouds1.AddComponent(new ParallaxBackgroundMovement("CloudsMovement", cloudspeed));
 
         clouds2 = new EntityImpl("clouds2");
-        clouds2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/clouds.png")));
+        clouds2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("clouds.png")));
         clouds2.AddComponent(new ParallaxBackgroundMovement("CloudsMovement", cloudspeed));
         clouds2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
         ground1 = new EntityImpl("ground1");
-        ground1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")));
+        ground1.AddComponent(new ImageRenderComponent("PlaneRender", new Image("ground.png")));
         ground1.AddComponent(new ParallaxBackgroundMovement("GroundMovement", groundspeed));
 
         ground2 = new EntityImpl("ground2");
-        ground2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/ground.png")));
+        ground2.AddComponent(new ImageRenderComponent("PlaneRender", new Image("ground.png")));
         ground2.AddComponent(new ParallaxBackgroundMovement("GroundMovement", groundspeed));
         ground2.setPosition(new Vector2f(gc.getWidth() - 1, 0));
 
         plane = new EntityImpl("plane");
-        plane.AddComponent(new ImageRenderComponent("PlaneRender", new Image("/data/airplane.png")));
+        plane.AddComponent(new ImageRenderComponent("PlaneRender", new Image("airplane.png")));
         plane.AddComponent(new PlayerMovement("PlaneMovement"));
         //plane.AddComponent(new Drag("PlaneDrag"));
         //plane.AddComponent(new Gravity("PlaneGravity"));

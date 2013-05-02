@@ -1,0 +1,51 @@
+apply plugin: 'java'
+
+	repositories {
+		mavenCentral()
+		flatDir {
+			dirs 'lib'
+		}
+	}
+
+
+dependencies {
+	testCompile 'junit:junit:4.11'
+	compile 'org.lwjgl.lwjgl:lwjgl:2.8.5'
+	compile ':Slick:'	
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+		resources {
+			include 'data/*'
+		}
+    }
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+jar {
+	destinationDir = file('..')
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+	from 'data'
+	/*manifest { 
+		attributes ('Main-Class' 			: 'seuss.game.Start',
+					attributes 'Class-Path' : configurations.compile.collect { it.getName() }.join(' ')
+		)
+	}*/
+	manifest {
+            attributes("Manifest-Version"       : "1.0",
+                "Main-Class"             : "seuss.game.Start",
+                "Class-Path"             : configurations.compile.collect { it.getName() }.join(' ')
+            )
+            }
+}
