@@ -16,7 +16,7 @@ gradle build
 cd ..
 ```
 
-Unzippaa seuss-game.jar ja sen jälkeen käynnistä peli komennolla
+Unzippaa seuss-game.jar samaan hakemistoon seuss-game.jar:n kanssa ja sen jälkeen käynnistä peli komennolla
 ```
 java -jar seuss-game.jar
 ```
