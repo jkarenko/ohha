@@ -11,7 +11,7 @@ apply plugin: 'java'
 dependencies {
 	testCompile 'junit:junit:4.11'
 	compile 'org.lwjgl.lwjgl:lwjgl:2.8.5'
-	compile ':Slick:'	
+	compile ':slick:'	
 }
 
 sourceSets {

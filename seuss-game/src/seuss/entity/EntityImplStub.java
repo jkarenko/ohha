@@ -28,7 +28,7 @@ public class EntityImplStub implements Entity {
     public EntityImplStub(String id) {
         this.id = id;
 
-        components = new ArrayList<>();
+        components = new ArrayList<Component>();
 
         position = new Vector2f(0, 0);
         scale = 1;

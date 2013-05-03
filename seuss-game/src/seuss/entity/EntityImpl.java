@@ -29,7 +29,7 @@ public class EntityImpl implements Entity {
     public EntityImpl(String id) {
         this.id = id;
 
-        components = new ArrayList<>();
+        components = new ArrayList<Component>();
 
         position = new Vector2f(0, 0);
         scale = 1;
