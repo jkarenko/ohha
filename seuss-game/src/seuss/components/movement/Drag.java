@@ -7,7 +7,8 @@ import org.newdawn.slick.state.StateBasedGame;
 import seuss.components.Component;
 
 /**
- *
+ * Owner entity is affected by air drag
+ * 
  * @author juho karenko
  */
 public class Drag extends Component {
@@ -16,6 +17,11 @@ public class Drag extends Component {
     private String id;
     private float negativeVelocity = 0f;
     
+    /**
+     * Constructor for Drag component
+     *
+     * @param id id string of component
+     */
     public Drag(String id) {
         this.drag = 0.01f;
         this.id = id;

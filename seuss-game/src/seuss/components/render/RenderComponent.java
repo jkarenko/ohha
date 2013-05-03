@@ -12,10 +12,23 @@ import seuss.components.Component;
  * @author juho karenko
  */
 public abstract class RenderComponent extends Component {
+    
+    /**
+     * Superclass for actual rendering components
+     * 
+     * @param id id string of component
+     */
     public RenderComponent(String id)
     {
 	this.id = id;
     }
  
+    /**
+     * Render image into screen in gamecontainer
+     * 
+     * @param gc game container
+     * @param sbg state based game
+     * @param gr slick2d graphics drawing functionality
+     */
     public abstract void render(GameContainer gc, StateBasedGame sbg, Graphics gr);
 }

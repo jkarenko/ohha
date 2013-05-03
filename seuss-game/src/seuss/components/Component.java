@@ -22,7 +22,8 @@ public abstract class Component {
     }
     
     /**
-     *
+     * Updates the state of the entity
+     * 
      * @param gc Slick2d game container
      * @param sbg Slick2d state based game
      * @param delta the time passed since last update, ensures uniform rate of movement etc

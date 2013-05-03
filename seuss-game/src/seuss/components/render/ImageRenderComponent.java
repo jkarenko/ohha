@@ -15,6 +15,12 @@ public class ImageRenderComponent extends RenderComponent {
 
     Image image;
 
+    /**
+     * Gives owner entity the ability to render itself on screen
+     * 
+     * @param id id string of component
+     * @param image picture associated with this component
+     */
     public ImageRenderComponent(String id, Image image) {
         super(id);
         this.image = image;

@@ -6,14 +6,10 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
-import org.newdawn.slick.geom.Rectangle;
-import org.newdawn.slick.geom.Shape;
 import org.newdawn.slick.geom.Vector2f;
 import seuss.components.render.ImageRenderComponent;
 import seuss.components.ParallaxBackgroundMovement;
 import seuss.components.movement.BoundaryCheck;
-import seuss.components.movement.Drag;
-import seuss.components.movement.Gravity;
 import seuss.components.movement.PlayerMovement;
 import seuss.entity.Entity;
 import seuss.entity.EntityImpl;
@@ -35,12 +31,19 @@ public class SeussGame extends BasicGame {
     Entity clouds1 = null;
     Entity clouds2 = null;
 
+    /**
+     *
+     * @param title title of the game
+     */
     public SeussGame(String title) {
         super(title);
     }
 
     /**
+     * game loop
+     * 
      * @param args the command line arguments
+     * @throws SlickException  
      */
     public void runGame() throws SlickException {
         AppGameContainer app = new AppGameContainer(new SeussGame("SEUSS"));

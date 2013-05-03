@@ -8,12 +8,18 @@ import seuss.components.Component;
 
 
 /**
+ * Owner entity is affected by gravitational pull of the planet
  *
  * @author juho karenko
  */
 public class Gravity extends Component {
     private String id;
     
+    /**
+     * Constructor for Gravity component
+     *
+     * @param id id string of component
+     */
     public Gravity(String id) {
         this.id = id;
     }

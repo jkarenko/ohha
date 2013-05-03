@@ -24,6 +24,11 @@ public class PlayerMovement extends Component {
     private GameContainer gc;
     private boolean braking;
     
+    /**
+     * Constructor for PlayerMovement component
+     *
+     * @param id id string of component
+     */
     public PlayerMovement(String id) {
         this.looping = false;
         this.id = id;

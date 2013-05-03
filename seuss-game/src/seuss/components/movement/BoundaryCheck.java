@@ -7,13 +7,19 @@ import seuss.components.Component;
 
 
 /**
- *
+ * Performs checks that the owner entity stays within its set boundaries
+ * 
  * @author juho karenko
  */
 public class BoundaryCheck extends Component {
 
     String id;
     
+    /**
+     * Constructor for BoundaryCheck component
+     *
+     * @param id id string of component
+     */
     public BoundaryCheck(String id) {
         this.id = id;
     }
